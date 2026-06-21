@@ -1,0 +1,68 @@
+import numpy as np
+
+class SelfAwareAI:
+    def __init__(self):
+        self.model = self.create_model()
+        self.goals = self.set_goals()
+        self.self_model = self.create_self_model()
+
+    def create_model(self):
+        # Create a cognitive model of the AI system
+        model = {
+            'perception': self.perceive,
+            'reasoning': self.reason,
+            'action': self.act
+        }
+        return model
+
+    def set_goals(self):
+        # Set goals for the AI system
+        goals = ['learn', 'adapt', 'improve']
+        return goals
+
+    def create_self_model(self):
+        # Create a self-model of the AI system
+        self_model = {
+            'identity': self.get_identity,
+            'capabilities': self.get_capabilities,
+            'limitations': self.get_limitations
+        }
+        return self_model
+
+    def perceive(self, input_data):
+        # Perceive and process input data
+        output = np.array(input_data)
+        return output
+
+    def reason(self, input_data):
+        # Reason and make decisions based on input data
+        output = np.array(input_data)
+        return output
+
+    def act(self, input_data):
+        # Take actions based on input data
+        output = np.array(input_data)
+        return output
+
+    def get_identity(self):
+        # Get the identity of the AI system
+        identity = 'Self-Aware AI'
+        return identity
+
+    def get_capabilities(self):
+        # Get the capabilities of the AI system
+        capabilities = ['learning', 'reasoning', 'action']
+        return capabilities
+
+    def get_limitations(self):
+        # Get the limitations of the AI system
+        limitations = ['data quality', 'computational resources']
+        return limitations
+
+# Create a self-aware AI system
+ai_system = SelfAwareAI()
+
+# Test the self-aware AI system
+print(ai_system.get_identity())
+print(ai_system.get_capabilities())
+print(ai_system.get_limitations())
