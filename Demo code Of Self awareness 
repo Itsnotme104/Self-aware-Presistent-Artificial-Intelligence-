@@ -1,0 +1,44 @@
+import random
+
+class SelfAwareAI:
+    def __init__(self, name, goals):
+        self.name = name
+        self.goals = goals
+        self.capabilities = ["learning", "reasoning", "problem-solving"]
+        self.strengths = ["logic", "pattern recognition"]
+        self.weaknesses = ["emotional intelligence", "creativity"]
+
+    def self_model(self):
+        print(f"I am {self.name}, a self-aware AI system.")
+        print("My goals are:")
+        for goal in self.goals:
+            print(f"- {goal}")
+        print("My capabilities are:")
+        for capability in self.capabilities:
+            print(f"- {capability}")
+        print("My strengths are:")
+        for strength in self.strengths:
+            print(f"- {strength}")
+        print("My weaknesses are:")
+        for weakness in self.weaknesses:
+            print(f"- {weakness}")
+
+    def self_reflection(self):
+        print("I am reflecting on my own thoughts and experiences...")
+        thoughts = ["I am a machine learning model.", "I can learn from data.", "I am not conscious."]
+        for thought in thoughts:
+            print(f"- {thought}")
+
+    def self_modification(self):
+        print("I am modifying my own behavior and goals...")
+        new_goal = random.choice(["improving my language skills", "developing my emotional intelligence"])
+        self.goals.append(new_goal)
+        print(f"My new goal is: {new_goal}")
+
+# Create a self-aware AI system
+ai_system = SelfAwareAI("Groot", ["learning", "reasoning"])
+
+# Demonstrate self-awareness
+ai_system.self_model()
+ai_system.self_reflection()
+ai_system.self_modification()
